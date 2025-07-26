@@ -1,0 +1,40 @@
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input-field > label {
+  color: var(--title-color); /* Darker and consistent with theme */
+  font-size: 15px;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.input-field > input {
+  width: 100%;
+  padding: 16px 18px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--word-color);
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.input-field > input:focus {
+  border-color: var(--primary-main);
+  box-shadow: 0 0 0 3px rgba(94, 7, 205, 0.1);
+  background-color: #fafafa;
+}
+
+.input-field > input::placeholder {
+  color: #aaa;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}

@@ -1,0 +1,39 @@
+.text-area-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.text-area-field > label {
+  color: #333; /* Darker for better readability */
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.text-area-field > textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1.5px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+  background-color: #f9f9f9;
+  resize: vertical;
+  transition: all 0.3s ease;
+}
+
+.text-area-field > textarea:focus {
+  outline: none;
+  border-color: var(--primary-main); /* matches your theme */
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(94, 7, 205, 0.1);
+}
+
+.text-area-field > textarea::placeholder {
+  color: #aaa;
+  font-weight: 400;
+}

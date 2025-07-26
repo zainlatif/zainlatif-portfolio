@@ -1,0 +1,64 @@
+.submit-button {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.4s ease;
+  box-shadow: 0 6px 15px rgba(94, 7, 205, 0.15);
+}
+
+.submit-button > input {
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 12px 20px;
+  padding-right: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #5e07cd, #7843e9);
+  color: #fff;
+  transition: padding 0.5s ease, background 0.3s ease;
+  outline: none;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  transition: all 0.4s ease;
+  opacity: 0.8;
+  z-index: 2;
+}
+
+.icon > svg {
+  width: 16px;
+  height: 16px;
+  fill: white;
+  transition: transform 0.4s ease;
+}
+
+.submit-button:hover > input {
+  padding-right: 70px;
+  box-shadow: 0 8px 18px rgba(94, 7, 205, 0.25);
+}
+
+.submit-button:hover .icon > svg {
+  transform: rotate(90deg) scale(1.2);
+}
+
+.submit-button:hover .icon {
+  animation: bounceIcon 1s infinite;
+}
+
+@keyframes bounceIcon {
+  0%, 100% {
+    transform: translateY(-50%) scale(1);
+  }
+  50% {
+    transform: translateY(-60%) scale(1.1);
+  }
+}
